@@ -5,17 +5,27 @@ In this project, we are basically finding opinion words, these are the words whi
 
 ## Steps:
 1)	Selecting the texts to examine:
+
 o	Load data: 
+
 Loading data into the memory and storing it in a dataframe or appropriate data type.
+
 o	Split by whitespace:
+
 Clean text often means a list of words or tokens that we can work with in our machine learning models. This means converting the raw text into a list of words and saving it again. A very simple way we used to do this is split the document by white space, including” “, new lines, tabs and more.
+
 o	Remove punctuation:
+
 We wanted the words, but without the punctuation like commas and quotes. We also wanted to keep contractions together.
 So then we split the document into words by white space (as in “2. Split by Whitespace“), then use string translation to replace all punctuation with nothing. 
 
 o	Normalizing case:
+
 It is common to convert all words to one case for efficient processing.
+
 This means that the vocabulary will shrink in size, but some distinctions are lost (e.g. “Apple” the company vs “apple” the fruit is a commonly used example).
+
 o	Remove stop words: 
+
 Stop words are those words that do not contribute to the deeper meaning of the phrase. They are the most common words such as: “the“, “a“, and “is“.
 
