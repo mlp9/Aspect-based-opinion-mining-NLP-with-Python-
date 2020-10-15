@@ -4,7 +4,7 @@ Aspect-Based Opinion Mining involves extracting aspects or features of an entity
 In this project, we are basically finding opinion words, these are the words which express opinion towards aspects. The opinion words are mostly adjectives, verbs, adverb adjective, and adverb verb combinations. For finding this opinion words Tagging is used.  Tagging is the process of assigning a part of speech marker to each word in an input text. Because tags are generally also applied to punctuation, tokenization is usually performed before, or as part of, the tagging process. For each opinion word, we need to identify its semantic orientation that tells us how it supports, positively or negatively to the overall aspect, which we used to predict the sentiment of each opinion sentence. Following are the course of actions performed:
 
 ## Steps:
-##1)Selecting the texts to examine:
+## 1)Selecting the texts to examine:
           
           a) Load data: 
 
