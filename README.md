@@ -50,6 +50,7 @@ It’s probably easiest to understand the process through an example. Let’s ta
 “Overall Appreciation for performance in last 12 months: John has filled big role in my team as Sr Manager RF Planning and have shown Good progress. John has managed to meet and often exceed target for AOP sites month on month. He has shown true leadership and demonstrated outstanding performance by pitching in and tracking U900swap, capacity addition and making sure sites goes on Air without a hitch. John has lived up the true Vodafone way.”
 
 Steps:
+
 o	We first replace the pronouns in the sentence using a pre-trained neural coreference model; in this particular review, it is not really relevant. 
 
 o	We then segment the chunk of text into sentences, and analyze sentence by sentence. The first step for a given sentence is to tag it with an aspect using POS Tagger.
