@@ -1,4 +1,4 @@
-# Aspect-based-opinion-mining-NLP-with-Python-
+# Aspect-based-opinion-mining-NLP-with-Python
 Aspect-Based Opinion Mining involves extracting aspects or features of an entity and figuring out opinions about those aspects. It's a method of text classification that has evolved from sentiment analysis and named entity extraction (NER). ABOM is thus a combination of aspect extraction and opinion mining. While opinions about entities are useful, opinions about aspects of those entities are more granular and insightful.
 
 In this project, we are basically finding opinion words, these are the words which express opinion towards aspects. The opinion words are mostly adjectives, verbs, adverb adjective, and adverb verb combinations. For finding this opinion words Tagging is used.  Tagging is the process of assigning a part of speech marker to each word in an input text. Because tags are generally also applied to punctuation, tokenization is usually performed before, or as part of, the tagging process. For each opinion word, we need to identify its semantic orientation that tells us how it supports, positively or negatively to the overall aspect, which we used to predict the sentiment of each opinion sentence. Following are the course of actions performed:
@@ -28,4 +28,17 @@ This means that the vocabulary will shrink in size, but some distinctions are lo
 e) Remove stop words: 
 
 Stop words are those words that do not contribute to the deeper meaning of the phrase. They are the most common words such as: “the“, “a“, and “is“.
+
+## 2)Deciding the Unit of Analysis:
+Once the texts have been carefully selected the next thing we did is, determine what the features of our unit of analysis would be.
+
+Features to consider:
+o	Words (unigrams) - a set of characters between two white spaces. We could consider unique words (types) and any word (tokens).
+o	Multiple words - bigrams, trigrams, n-grams.
+o	Count word stems and lemmas - equivalence classes for words, e.g. run, runs and ran.
+o	Word counts in documents, paragraphs and sentences.
+
+## 3) Creating a Document Feature Matrix:	
+Once we've counted our features we need to put them into a useable format for analysis - a document feature matrix. We then represent each document as a vector or list of word counts. We took a document and turn it into a set of word counts, did this for selected texts, and stacked each document as a column in our document feature matrix. So the words become rows, the columns are the documents and an element in the matrix represents the number of times the word appears in a document. We used the most popular n-gram approach for making a vector from document that comprised of 2 words features being extracted from the text. We then used the sentiment of the features to classify the features/skills extracted into high, medium and low.
+
 
