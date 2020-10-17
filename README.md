@@ -29,7 +29,7 @@ e) Remove stop words:
 
 Stop words are those words that do not contribute to the deeper meaning of the phrase. They are the most common words such as: “the“, “a“, and “is“.
 
-##2) Deciding the unit of analysis:
+## 2) Deciding the unit of analysis:
 Once the texts have been carefully selected the next thing we did is, determine what the features of our unit of analysis would be.
 
 Features to consider:
@@ -45,7 +45,7 @@ In corpus linguistics, part-of-speech tagging (POS tagging), also called grammat
 
 It’s probably easiest to understand the process through an example. Let’s take a look at a simple review for an employee named john.
 
-Example review:
+## Example review:
 
 “Overall Appreciation for performance in last 12 months: John has filled big role in my team as Sr Manager RF Planning and have shown Good progress. John has managed to meet and often exceed target for AOP sites month on month. He has shown true leadership and demonstrated outstanding performance by pitching in and tracking U900swap, capacity addition and making sure sites goes on Air without a hitch. John has lived up the true Vodafone way.”
 
@@ -54,7 +54,7 @@ o	We first replace the pronouns in the sentence using a pre-trained neural coref
 
 o	We then segment the chunk of text into sentences, and analyze sentence by sentence. The first step for a given sentence is to tag it with an aspect using POS Tagger.
 
-“Overall Appreciation for performance in last 12 months: John has filled big role in my team as Sr Manager RF Planning and have shown Good progress.<font color="green"> John has managed to meet and often exceed target for AOP sites month on month.  </font> He has shown true leadership and demonstrated outstanding performance by pitching in and tracking U900swap, capacity addition and making sure sites goes on Air without a hitch. John has lived up the true Vodafone way.”
+“Overall Appreciation for performance in last 12 months: John has filled big role in my team as Sr Manager RF Planning and have shown Good progress. - John has managed to meet and often exceed target for AOP sites month on month. He has shown true leadership and demonstrated outstanding performance by pitching in and tracking U900swap, capacity addition and making sure sites goes on Air without a hitch. John has lived up the true Vodafone way.”
 
 o	The next step is to identify opinion words by cross referencing the opinion lexicon for negative and positive words. Once found, the spaCy’s dependency parser is able to identify other dependency words linked to that particular opinion word. This allows you to extract the aspect term, which are shown above. Then, we find the sentiment score based on the opinion words that support the aspect in a positive or negative way and then we assign that sentiment score to the aspect term that it’s referring to.
 
