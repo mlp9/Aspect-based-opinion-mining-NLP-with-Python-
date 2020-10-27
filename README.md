@@ -59,3 +59,4 @@ o	We then segment the chunk of text into sentences, and analyze sentence by sent
 
 o	The next step is to identify opinion words by cross referencing the opinion lexicon for negative and positive words. Once found, the spaCy’s dependency parser is able to identify other dependency words linked to that particular opinion word. This allows you to extract the aspect term, which are shown above. Then, we find the sentiment score based on the opinion words that support the aspect in a positive or negative way and then we assign that sentiment score to the aspect term that it’s referring to.
 
+This application was a part of my internship project that I worked on during my time as a Data Science Intern at Catalyst Executive Education Institute(CEEI).
